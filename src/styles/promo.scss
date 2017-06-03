@@ -1,0 +1,138 @@
+.promo-logo {
+  display: none;
+}
+
+.promo {
+  margin: 6px 0 0;
+  padding: 50px 15px 46px 60px;
+  background: #ededed;
+}
+
+.promo_pic {
+  position: relative;
+  float: left;
+  img {
+    width: 515px;
+    height: 434px;
+  }
+}
+
+.promo_pic_note {
+  position: absolute;
+  left: 0;
+  bottom: 29px;
+  padding: 10px 16px 7px 19px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  background: rgba(0,0,0,0.75);
+}
+
+.promo_info {
+  margin-top: 4px;
+  margin-left: 545px;
+  min-height: 434px;
+}
+
+.promo_title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.promo_desc {
+  margin: 32px 0 0;
+
+  p {
+    padding: 0;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.1;
+
+    & + p {
+      margin-top: 16px;
+    }
+  }
+}
+
+.promo_btn {
+  margin: 50px 0 0;
+  padding: 13px 10px;
+  width: 210px;
+  height: 40px;
+  background: #e60000;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media only screen and (max-width: 340px) {
+  .promo-logo {
+    display: block;
+    margin: 22px 0 0;
+
+    &:before {
+      display: inline-block;
+      margin: 0 14px 0 0;
+      content: "При поддержке";
+      font-size: 13px;
+      letter-spacing: -0.21px;
+      color: #A1A1A1; 
+    }
+  }
+
+  .promo {
+    padding: 0;
+    background: #fff;
+  }
+
+  .promo_pic {
+    float: none;
+    margin: 0 -8px;
+    width: 314px;
+    height: 265px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .promo_pic_note {
+      width: 185px;
+      font-size: 19px;
+      padding: 10px 5px 2px 16px;
+      bottom: 17px;
+    }
+  }
+
+  .promo_info {
+    min-height: auto;
+    margin: 0;
+  }
+
+  .promo_title {
+    margin: 19px 0 0;
+    padding: 0 18px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .promo_desc {
+    margin: 13px 0 0;
+    p {
+      font-size: 12px;
+      padding-right: 2px;
+      line-height: 1;
+
+      & + p {
+        margin-top: 13px;
+      }
+    }
+  }
+
+  .promo_btn {
+    margin: 51px auto 12px;
+  }
+}

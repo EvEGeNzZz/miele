@@ -1,0 +1,93 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    )
+    link(rel="stylesheet" href="/assets/main.css")
+  body
+    #flow
+    
+    .header
+      .container
+        .header_toggler.js-headerToggler
+          span
+          span
+          span
+        a.header_logo(href='http://www.inmyroom.ru', target='_blank')
+          img(width='193px', src='./assets/imr_logo.svg')
+        a.header_logo(href='http://www.kitchenmag.ru', target='_blank')
+          img(width='183px', src='./assets/km_logo.png')
+        a.header_promo-logo(href='http://www.miele.ru/', target='_blank')
+          img(width='127px', src='./assets/miele_logo.png')
+        ul.header_nav
+          li.header_nav_item
+            a.header_nav_link(href='//inmyroom.ru/my/feed', target='_blank') Моя лента
+          li.header_nav_item
+            a.header_nav_link(href='//inmyroom.ru/posts', target='_blank') Идеи
+          li.header_nav_item
+            a.header_nav_link(href='//inmyroom.ru/products', target='_blank') Магазин
+          li.header_nav_item
+            a.header_nav_link(href='//inmyroom.ru/photos', target='_blank') Фото
+          li.header_nav_item
+            a.header_nav_link(href='//inmyroom.ru/discussions', target='_blank') Советы
+          li.header_nav_item
+            a.header_nav_link(href='//inmyroom.ru/profi', target='_blank') Профи
+    .container
+      .panel
+        #gallery.section.section-gallery
+          h1 Центр вдохновения вашей кухни
+          p О том как современная техника может изменить пространство, привить полезные привычки и вдохновить на творчество вы сможете из нашего спецпроекта с Miele и главным героем К20000  - центром дизайна, центром функциональности, центром инновационности, центром свежести продуктов и т.д.
+          ul#flow-data
+            ul(data-cat="1")
+              ul
+                li(data-url="link:http://www.google.com" data-target="_blank")
+                li(data-thumbnail-path="/assets/cover-3.jpg")
+              ul
+                li(data-url="link:http://www.google.com" data-target="_blank")
+                li(data-thumbnail-path="/assets/cover-2.jpg")
+              ul
+                li(data-url="link:http://www.google.com" data-target="_blank")
+                li(data-thumbnail-path="/assets/cover-3.jpg")
+              ul
+                li(data-url="link:http://www.google.com" data-target="_blank")
+                li(data-thumbnail-path="/assets/cover-3.jpg")
+              ul
+                li(data-url="link:http://www.google.com" data-target="_blank")
+                li(data-thumbnail-path="/assets/cover-3.jpg")
+              ul
+                li(data-url="link:http://www.google.com" data-target="_blank")
+                li(data-thumbnail-path="/assets/cover-3.jpg")
+          a.promo-logo(href='http://www.miele.ru/', target='_blank')
+            img(width='79px', src='./assets/miele_logo.png')
+        #articles.section.section-articles
+          h2 Советы и лайфхаки по обустройству
+          p Мы делимся с вами удачными решениями, советами и лайфхаками по дизайну и обустройству кухни.
+          div(data-component="posts")
+      .panel
+        .panel_header
+          .panel_header_block
+            a.header_logo(href='http://www.kitchenmag.ru', target='_blank')
+              img(width='200px', src='./assets/km_logo_2.png')
+          a.header_promo-logo(href='http://www.miele.ru/', target='_blank')
+            img(src='./assets/miele_logo.png')
+        #articles.section.section-articles_2
+          p Как связаны инновационные технологии, правильное хранение продуктов и забота о здоровье семьи?  Узнайте подробнее на KITCNEHMAG
+          div(data-component="posts")   
+        .promo
+          .promo_pic
+            img(src="./assets/promo-pic.png")
+            .promo_pic_note Miele K 20.000 Blackboard edition
+          .promo_info
+            .promo_title Холодильник как новая форма общения с близкими
+            .promo_desc
+              p Новая серия K 20.000 – это отдельно стоящие холодильники, морозильники и их комбинации. Класс энергоэффективности всех моделей – A++ или A+++. 
+              p Среди преимуществ новой серии – большая рабочая камера XL, исключительно низкий уровень шума, функция ComfortFrost, позволяющая реже размораживать холодильник. Кроме того, у холодильников и морозильников K 20.000 теперь нет выступающих ручек. Вместо этого Miele предлагает функцию Click2open, которая гарантирует простоту и удобство. 
+              p Новинки оснащены TFT-дисплеями с системой сенсорного управления, которые идеально сочетаются с дизайном панелей управления кухонной техники Generation 6000.
+            .promo_btn Перейти на сайт
+
+    script(src='/assets/main.js')

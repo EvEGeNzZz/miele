@@ -1,0 +1,43 @@
+.post-preview {
+  margin: 0 auto;
+  display: block;
+  width: 316px;
+  min-height: 287px;
+}
+
+.post-preview_pic img {
+  width: 316px;
+  height: 202px;
+  border-radius: 10px 10px 0 0; 
+}
+
+.post-preview_title {
+  width: 316px;
+  min-height: 81px;
+  padding: 13px 22px 22px 19px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  border-radius: 0 0 10px 10px;
+}
+
+@media only screen and (max-width: 340px) {
+  .post-preview {
+    width: 260px;
+    min-height: 260px;
+  }
+
+  .post-preview_title {
+    width: 260px;
+    font-size: 15px;
+    padding: 9px 15px 15px 15px;
+    line-height: 1.1;
+  }
+
+  .post-preview_pic {
+    img {
+      width: 260px;
+      height: 167px;
+    }
+  }
+}

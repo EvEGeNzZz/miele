@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #F8F4E8;
+  z-index: 99;
+
+  .container {
+    overflow: hidden;
+    padding: 60px 0px 33px;
+  }
+}
+
+.header_logo {
+  position: relative;
+  z-index: 1;
+  margin: 3px 0 0;
+  float: left; 
+
+  & + .header_logo {
+    margin-left: 20px;
+  }
+}
+
+.header_promo-logo {
+  position: relative;
+  display: block;
+  float: right;
+  margin: -2px 0 0 0; 
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "При поддержке";
+    top: -16px;
+    right: 0;
+    font-size: 13px;
+    letter-spacing: -0.21px;
+    color: #A1A1A1; 
+  }
+  
+  img {
+    margin-top: 5px; 
+  }
+}
+
+.header_nav {
+  margin: 15px 0 0;
+  padding-left: 455px;
+  max-width: none; 
+} 
+
+.header_nav_item {
+  float: left;
+  margin: 0 33px 0 0; 
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 340px) {
+  .header {
+    position: relative;
+
+    .container {
+      padding: 0;
+    }
+  }
+
+  .header_logo {
+    display: block;
+    width: 145px;
+    margin: 10px auto;
+    float: none;
+
+    & + .header_logo {
+      margin: 10px auto;
+    }
+  }
+
+  .header_nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 60px 0 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in, opacity .25s ease-in;
+    max-height: 0;
+    opacity: 0;
+    background: #fff;
+    text-shadow: none; 
+  }
+
+  .is-open .header_nav {
+    visibility: visible;
+    max-height: 1000px;
+    opacity: 1;
+    z-index: 90;   
+  } 
+
+  .header_promo-logo {
+    display: none;
+  }
+
+}
